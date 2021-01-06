@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Room Ka Hisab</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-sidebar">
+        <h2>Room Ka Hisab</h2>
+        <button onclick="addData()">Add Data</button>
+        <button onclick="aryanshData()">Aryansh</button>
+        <button onclick="sushantData()">Sushant</button>
+        <button onclick="omyData()">Omy</button>
+        <button onclick="allData()">All Data</button>
+      </div>
+      <div class="content-area">
+        <div id="add-data-area">
+          
+          <select id="select">
+            <option value="">-----select a name-----</option>
+            <option value="aryansh">Aryansh</option>
+            <option value="sushant">Sushant</option>
+            <option value="omy">Omy</option>
+          </select>
+          <input type="text" id="reason"/>
+          <input type="number" id="money"/>
+          <button onclick="save()">Save Data</button>
+          <div id="msg"></div>
+        </div>
+        <div class="aryansh" id="aryansh">
+          <table>
+            <thead>
+              <tr>
+                <th>Record Id</th>
+                <th>Name</th>
+                <th>Reason</th>
+                <th>Expenditure</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="aryansh-table">
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="sushant" id="sushant">
+          <table>
+            <thead>
+              <tr>
+                <th>Record Id</th>
+                <th>Name</th>
+                <th>Reason</th>
+                <th>Expenditure</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="sushant-table">
+             
+            </tbody>
+          </table>
+        </div>
+        <div class="omy" id="omy">
+          <table>
+            <thead>
+              <tr>
+                <th>Record Id</th>
+                <th>Name</th>
+                <th>Reason</th>
+                <th>Expenditure</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="omy-table">
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="all-data" id="all-data">
+<table>
+            <thead>
+              <tr>
+                <th>Record Id</th>
+                <th>Name</th>
+                <th>Reason</th>
+                <th>Expenditure</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="all-data-tbl">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
